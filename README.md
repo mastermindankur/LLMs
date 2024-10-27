@@ -18,18 +18,21 @@ The dataset used for training is hosted at [mastermindankur/results](https://hug
 To calculate the memory requirement for fine-tuning a Large Language Model (LLM), we need to account for the following main components: model parameters, activations, gradients, and optimizer states. Here’s a formula you can use, with details on each component to help you adjust it for your specific model size, precision, and batch size.
 
 Memory Requirement Formula
+### Memory Usage in Deep Learning
 
-The total memory requirement ￼ for training a large language model is approximately:
-￼
+The total memory requirement \( M_{\text{total}} \) in deep learning can be defined as:
+
+\[
 M_{\text{total}} = M_{\text{parameters}} + M_{\text{activations}} + M_{\text{gradients}} + M_{\text{optimizer}}
-
+\]
 
 Where:
 
-	•	 M_{\text{parameters}} : Memory to store the model parameters.
-	•	 M_{\text{activations}} : Memory for the activations needed during forward and backward passes.
-	•	 M_{\text{gradients}} : Memory for gradients during backpropagation.
-	•	 M_{\text{optimizer}} : Memory for optimizer states.
+- \( M_{\text{parameters}} \): Memory required to store model parameters.
+- \( M_{\text{activations}} \): Memory required for storing activations during forward pass.
+- \( M_{\text{gradients}} \): Memory required for gradients during backpropagation.
+- \( M_{\text{optimizer}} \): Memory used by the optimizer for additional calculations.
+
 
 Breaking Down Each Component
 
